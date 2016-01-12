@@ -1,0 +1,255 @@
+\documentclass[9pt]{article}
+\usepackage{fullpage}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{wasysym}
+\usepackage{marvosym}
+\usepackage[usenames]{color}
+%\usepackage{xcolor}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+\usepackage{tikz}
+
+\pagestyle{fancy}
+
+
+
+\hypersetup{hidelinks = true}
+\definecolor{DarkGray}{rgb}{0.3,0.3,0.3}
+
+
+
+\leftmargin=0.25in
+\oddsidemargin=0.25in
+\textwidth=6.0in
+\topmargin=-0.25in
+\textheight=9.25in
+
+\raggedright
+
+\pagenumbering{gobble}
+
+\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
+% DEFINITIONS FOR RESUME
+
+\newenvironment{changemargin}[2]{%
+  \begin{list}{}{%
+    \setlength{\topsep}{0pt}%
+    \setlength{\leftmargin}{#1}%
+    \setlength{\rightmargin}{#2}%
+    \setlength{\listparindent}{\parindent}%
+    \setlength{\itemindent}{\parindent}%
+    \setlength{\parsep}{\parskip}%
+  }%
+  \item[]}{\end{list}
+}
+
+\newcommand{\lineover}{
+	\begin{changemargin}{-0.05in}{-0.05in}
+		\vspace*{-8pt}
+		\color{NavyBlue}
+		\hrulefill \\
+		\vspace*{-2pt}
+	\end{changemargin}
+}
+
+\newcommand{\header}[1]{
+	\begin{changemargin}{-0.5in}{-0.5in}
+		\scshape{\textcolor{NavyBlue}{#1}}\\
+  	\lineover
+	\end{changemargin}
+}
+
+\newcommand{\contact}[4]{
+	\begin{changemargin}{-0.5in}{-0.5in}
+		\begin{center}
+			{\Large \scshape \textcolor{NavyBlue}{#1}}\\ \smallskip
+			%\textcolor{DarkGray}{#2}\\ \smallskip 
+			\textcolor{DarkGray}{#3}\\ \smallskip
+			\textcolor{DarkGray}{#4}\smallskip
+		\end{center}
+	\end{changemargin}
+}
+
+\newenvironment{body} {
+	\vspace*{-16pt}
+	\begin{changemargin}{-0.25in}{-0.5in}
+  }	
+	{\end{changemargin}
+}	
+
+\newcommand{\school}[4]{
+	\textbf{#1} \hfill \emph{#2\\}
+	#3\\ 
+	#4\\
+}
+
+% END RESUME DEFINITIONS
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Name
+\contact{Vighnesh Birodkar}{http://vighneshbirodkar.github.io/}{\includegraphics[height=1.6ex]{globe.png} \url{http://vighneshbirodkar.github.io/} \hspace{.01cm} \Letter \hspace{.01cm} vighneshbirodkar@nyu.edu }{\Mobilefone \hspace{.01cm} +1 551-253-7018}
+
+\vspace{10pt}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Objective
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Education
+\vspace{-1pt}
+\header{Education}
+
+\begin{body}
+	\vspace{14pt}
+	\textbf{MS in Computer Science -- GPA: 3.76/4 }{} \hfill \emph{2015 - 2017 }{} \\
+	\emph{New York University - Courant Institute}, New York, USA{} \\
+	\medskip	
+	\textbf{B.Tech Computer Science \& Engineering -- GPA: 8.05/10}{} \hfill \emph{2010 - 2014 }{} \\
+	\emph{National Instiutute of Technology }, Goa, India{} \\
+  %\medskip
+%	\textbf{Class XII --- 75\%} \hfill \emph{2008 -- 2010} \\
+%	\emph{Shree Damodar HSSC}, Goa\\
+ % \medskip
+%	\textbf{Class X --- 90\%} \hfill \emph{2007 -- 2008} \\
+%	\emph{A.J.De Almeida High School}, Goa\\
+\end{body}
+
+\smallskip
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Experience
+
+\header{Work Experience}
+
+\begin{body}
+	\vspace{14pt}
+		\textbf{Junior Data Scientist (Part-time)}, \emph{NYU Centre for Data Science} \hfill \emph{September 2015 - Current}\\
+	\vspace*{-3pt}
+	\begin{itemize} \itemsep -0pt  % reduce space between items
+		\item Contribute to the scikit-learn project.
+	\end{itemize}	
+	\textbf{Software Development Engineer}, \emph{Samsung Research India} \hfill \emph{June 2014 - June 2015}\\
+	\vspace*{-4pt}
+	\begin{itemize} \itemsep -0pt  % reduce space between items
+		\item Embedded application development in Printers Division.
+		\item Revamping the Firmware Update process.
+	\end{itemize}	
+	
+	
+
+\end{body}
+
+\smallskip
+
+
+
+\header{Internships}
+
+\begin{body}
+	\vspace{14pt}
+	\textbf{Google Summer of Code Student}, \emph{Python Software Foundation} \hfill \emph{June 2014 - September 2014}\\
+	\vspace*{-4pt}
+	\begin{itemize} \itemsep -0pt  % reduce space between items
+		\item Designed Region Adjacency Graph Data structures from scikit-image.
+		\item Implemented Region Adjacency Graph based segmentation algorithms.
+	\end{itemize}	
+	
+	
+	\textbf{Google Summer of Code Student}, \emph{SimpleCV} \hfill \emph{June 2013 - September 2013}\\
+	\vspace*{-4pt}
+	\begin{itemize} \itemsep -0pt  % reduce space between items
+		\item Designed a Display System for local applications in Python.
+		\item Designed a Display System for remote applications using Python, HTML and Javascript.
+	\end{itemize}
+
+	\textbf {Summer Intern}, \emph{IIT Bombay} \hfill \emph{May 2013 - June 2013}\\
+	\vspace*{-4pt}
+	\begin{itemize} \itemsep -0pt
+		\item Designed a Visual Programming Environment for Arduino Boards
+		\item Ported the Visual Programming Environment for Windows, Linux and Android
+	\end{itemize}
+\end{body}
+
+\smallskip
+
+% \newpage{} % uncomment this line if you want to force a new page
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Publications
+
+\header{Publications}
+
+\begin{body}
+	\vspace{14pt}
+	\begin{itemize} \itemsep -0pt
+		\item Manjunath, M.; Samuel, A.; Birodkar, V.; Beg, M.O., "A novel proposal for Electrical Load Online Census (ELOC)," \emph{India Conference (INDICON), 2013 Annual IEEE }, vol., no., pp.1,6, 13-15 Dec. 2013
+	\end{itemize}
+\end{body}
+\smallskip
+
+\header{Projects}
+
+\begin{body}
+	\vspace{14pt}
+	\begin{itemize} \itemsep -0pt
+		\item Developed an Online AC Circuit Simulator for \emph{ekShiksha}.\hfill [AcionScript 3.0]
+		\item Developed an Automatic Subtitle Finder for Movies.\hfill [Python]
+		\item Developed \emph{Fredo-Editor}, a frequency domain image editor.\hfill [Python]
+		\item Developed an In-Memory Data Store implementing a subset of Redis Protocol. \hfill [C]
+
+	\end{itemize}
+\end{body}
+
+\smallskip
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Skills
+\header{ Technical Skills}
+
+\begin{body}
+	\vspace{14pt}
+	\emph{\textbf{Programming Languages :}}\newline
+	{C, C++, Java, Python, Javascript, Unix Shell-Script, MySQL, ActionScript 3.0, PHP}
+	\medskip \newline
+	\emph{\textbf{Libraries :}}\newline
+	{scikit-learn, scikit-image, numpy, scipy, OpenCV, SimpleCV, Android SDK, Flex SDK, PIL, Box2D}
+	\medskip \newline
+	\emph{\textbf{Platforms and Environments :}}\newline
+	{Windows, Linux, git, Eclipse, Matlab, Clearcase, Flashbuilder, Dreamweaver }
+\end{body}
+
+\smallskip
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Leadership
+\header{Extra-Curricular Activities}
+
+\begin{body}
+	\vspace{14pt}
+	\begin{itemize}
+		\item Mentor for Python Software Foundation for GSoC 2015.
+		\item Employee of the month in Samsung at October 2014
+		\item Secured 1st place in \emph{Automata} 2011 and 2012, a National Level Image Processing based Robotics Challenge at Engineer, NITK Surathkal.
+		\item Secured 2nd place in \emph{Anaglyph} 2012, a National Level Stereo-Vision based Robotics Challenge at Quark, BITS Goa
+		%\item Best App Idea Award at Android Hackathon for \emph{Glint}, a Photography application for Light Painting.
+
+	\end{itemize}
+\end{body}
+
+\smallskip
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Awards and Honors
+
+
+\end{document}
